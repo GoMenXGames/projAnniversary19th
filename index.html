@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Anniversary 19th</title>
+    <link rel="stylesheet" href="master.css">
+  </head>
+  <body>
+    <fieldset class="clockfield">
+    <legend class="title">До 19-ого Дня рождения осталось</legend>
+    <div id="clock"></div>
+    </fieldset>
+    <fieldset class="auth">
+      <legend>Авторизация</legend>
+      <h4>Логин</h4>
+      <input type="text" name="login" value="">
+      <h4>Пароль</h4>
+      <input type="password" name="password" value="">
+      <button type="button" name="button" onclick="tryLogin()">Авторзоваться</button>
+    </fieldset>
+    <fieldset class="gamechoose">
+      <legend>Выбор игр</legend>
+      <div class="addergames">
+        <input type="text" name="name" required placeholder="Наименование игры"> <input required type="url" size="69" name="url" placeholder="Ссылка на игру (Steam, Origin и т.п.)"> <input type="button" name="add" onclick="addgame(this.value)" value="Добавить">
+      </div>
+      <p class="warning">ВНИМАНИЕ!: Прежде чем добавлять проверьте, есть ли игра в списке снизу.</p>
+      <fieldset class="gameinfo">
+        <legend><select onchange="selectChange(this.selectedIndex)"></select></legend>
+        <div class="game">
+
+        </div>
+      </fieldset>
+    </fieldset>
+
+  </body>
+  <script src="clock.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+</html>
